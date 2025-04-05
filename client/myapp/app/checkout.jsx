@@ -33,7 +33,7 @@ const { param1, param2, param3, param4, param5 } = route.params;
 
 const handlePayment = async () => {
     try {
-        const response = await fetch('http://192.168.0.101:3000/generate-qrcode', {
+        const response = await fetch('http://localhost:3000/generate-qrcode', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ param1, param2, param3, param4, param5 })
